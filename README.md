@@ -1,6 +1,6 @@
 # Automatic Text Summarization Project
 
-This project aims to achieve automatic text summarization using graph-based techniques. It implements a workflow that includes text vectorization, similarity calculation, graph creation, representative sentence selection, and sentence fusion to generate abstractive summaries. Additionally, evaluation metrics such as ROUGE and BERTScore are calculated to assess the quality of the generated summaries.
+This project aims to achieve automatic text summarization using graph-based techniques. It implements a workflow that includes text vectorization, similarity calculation, graph creation, connected components computation, representative sentence selection, and sentence fusion to generate abstractive summaries. Additionally, evaluation metrics such as ROUGE and BERTScore are calculated to assess the quality of the generated summaries.
 
 ## Project Execution
 
@@ -23,7 +23,7 @@ The execution process includes the following stages:
 - Text Vectorization: Techniques like TF-IDF, Cohere, and Jina AI are used to convert text into numerical vectors.
 - Similarity Calculation: The similarity between text vectors is calculated using metrics like cosine similarity.
 - Graph Creation: Graphs are created using similarity matrices to represent the text structure.
-- Finding Connected Components: Connected components are identified within the graph structure to capture meaningful clusters of sentences.
+- Connected Components Computation: Connected components are identified within the graph structure to capture meaningful clusters of sentences.
 - Representative Sentence Selection: The MMR technique is used to select the most relevant sentences for the final summary.
 - Sentence Fusion: Selected sentences are fused to generate abstractive summaries.
 - Results Evaluation: Evaluation metrics such as ROUGE and BERTScore are calculated to assess the quality of the generated summaries.
