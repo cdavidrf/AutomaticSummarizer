@@ -29,16 +29,16 @@ The execution process includes the following stages:
 - Results Evaluation: Evaluation metrics such as ROUGE and BERTScore are calculated to assess the quality of the generated summaries.
 
 ## References
-- [NLTK](https://www.nltk.org/)
-- [TF-IDF](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
-- [Cohere Embeddings](https://docs.cohere.com/docs/embeddings)
-- [Jina AI Embeddings](https://huggingface.co/jinaai/jina-embeddings-v2-base-en)
-- [Cosine Similarity](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html)
-- [NetworkX](https://github.com/networkx/networkx)
-- [MMR](https://medium.com/tech-that-works/maximal-marginal-relevance-to-rerank-results-in-unsupervised-keyphrase-extraction-22d95015c7c5)
-- [Humarin Paraphraser](https://huggingface.co/humarin/chatgpt_paraphraser_on_T5_base)
-- [BERTScore](https://github.com/Tiiiger/bert_score)
-- [Rouge](https://pypi.org/project/rouge/)
+* [NLTK](https://www.nltk.org/)
+* [TF-IDF](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
+* [Cohere Embeddings](https://docs.cohere.com/docs/embeddings)
+* [Jina AI Embeddings](https://huggingface.co/jinaai/jina-embeddings-v2-base-en)
+* [Cosine Similarity](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html)
+* [NetworkX](https://github.com/networkx/networkx)
+* [MMR](https://medium.com/tech-that-works/maximal-marginal-relevance-to-rerank-results-in-unsupervised-keyphrase-extraction-22d95015c7c5)
+* [Humarin Paraphraser](https://huggingface.co/humarin/chatgpt_paraphraser_on_T5_base)
+* [BERTScore](https://github.com/Tiiiger/bert_score)
+* [Rouge](https://pypi.org/project/rouge/)
 
 
 
