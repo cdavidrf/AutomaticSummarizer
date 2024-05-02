@@ -1,4 +1,6 @@
 import numpy as np
+
+# Importar scripts
 import scripts.create_graph as create_graph
 import scripts.find_connected_components as find_connected_components
 

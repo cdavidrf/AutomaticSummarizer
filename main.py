@@ -1,6 +1,7 @@
 # Autor: 
 import pandas as pd
 import time
+
 # Importar los scripts necesarios
 import scripts.transcripts_preprocessing as transcripts_preprocessing
 import scripts.vectorize_with_tfidf as vectorize_with_tfidf

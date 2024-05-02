@@ -1,6 +1,7 @@
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+
 def select_sentences(components_list, lambda_param=0.7):
     """
     Selecciona oraciones utilizando el algoritmo Maximal Marginal Relevance (MMR) en una lista de componentes conectados.
