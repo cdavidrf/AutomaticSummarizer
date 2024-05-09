@@ -11,9 +11,9 @@ To install Python, you can follow the instructions provided in the [official Pyt
 
 Note: To use Cohere for text vectorization, you will need to obtain an API key from Cohere by accessing the following link [Cohere API Keys](https://dashboard.cohere.com/api-keys). Once you have obtained the API key, please set it up in your environment. Create a file named `.env` in the root directory of the project and add the following line with your API key:
 
-    ```
-    COHERE_API_KEY = "your_api_key_here"
-    ```
+```
+COHERE_API_KEY = "your_api_key_here"
+```
 
 ## Project Execution
 

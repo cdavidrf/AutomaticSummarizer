@@ -1,6 +1,7 @@
 # Authors: Cristian David Rocha Fernández, Juan Carlos Montes Estrada, Andrés Felipe Hernández Giraldo
-import pandas as pd
 import time
+import sys
+import pandas as pd
 import scripts.preprocess_transcripts as preprocess_transcripts
 import scripts.calculate_vectors_with_tfidf as calculate_vectors_with_tfidf
 import scripts.calculate_vectors_with_cohere as calculate_vectors_with_cohere
@@ -16,6 +17,8 @@ import scripts.calculate_rougescore as calculate_rougescore
 import scripts.calculate_bertscore as calculate_bertscore
 
 start_time = time.time()
+
+sys.setrecursionlimit(8735 * 2080 + 10)
 
 #data = pd.read_csv("data/1sample.csv",sep=",")
 data = pd.read_csv("data/4samples.csv",sep=",")
