@@ -1,6 +1,19 @@
 # Automatic Text Summarization Project
 
-This project aims to achieve automatic text summarization using graph-based techniques. It implements a workflow that includes text vectorization, similarity calculation, graph creation, connected components computation, representative sentence selection, and sentence fusion to generate abstractive summaries. Additionally, evaluation metrics such as ROUGE and BERTScore are calculated to assess the quality of the generated summaries.
+This project aims to achieve automatic text summarization using graph-based techniques. It implements a workflow that includes text vectorization, similarity calculation, graph creation, connected components computation, representative sentence selection, and sentence fusion to generate summaries. Additionally, evaluation metrics such as ROUGE and BERTScore are calculated to assess the quality of the generated summaries.
+
+
+## Environment Requirements
+
+It is recommended to use Python 3.10.12 to run this project. 
+
+To install Python, you can follow the instructions provided in the [official Python documentation](https://docs.python.org/3/).
+
+Note: To use Cohere for text vectorization, you will need to obtain an API key from Cohere by accessing the following link [Cohere API Keys](https://dashboard.cohere.com/api-keys). Once you have obtained the API key, please set it up in your environment. Create a file named `.env` in the root directory of the project and add the following line with your API key:
+
+    ```
+    COHERE_API_KEY = "your_api_key_here"
+    ```
 
 ## Project Execution
 
@@ -11,7 +24,14 @@ To run the project, follow these steps:
 ```
 pip install -r requirements.txt
 ```
-2. Execute the `main.py` script to generate text summaries. Make sure to have the necessary data files in the `data/` folder.
+
+2. Download the English language model for SpaCy by running the following command: 
+
+```
+python3 -m spacy download en_core_web_sm
+```
+
+3. Execute the `main.py` script to generate text summaries. Make sure to have the necessary data files in the `data/` folder.
 
 ```
 python main.py
@@ -25,7 +45,7 @@ The execution process includes the following stages:
 - Graph Creation: Graphs are created using similarity matrices to represent the text structure.
 - Connected Components Computation: Connected components are identified within the graph structure to capture meaningful clusters of sentences.
 - Representative Sentence Selection: The MMR technique is used to select the most relevant sentences for the final summary.
-- Sentence Fusion: Selected sentences are fused to generate abstractive summaries.
+- Sentence Fusion: Selected sentences are fused to generate summaries.
 - Results Evaluation: Evaluation metrics such as ROUGE and BERTScore are calculated to assess the quality of the generated summaries.
 
 ## References
@@ -39,6 +59,7 @@ The execution process includes the following stages:
 * [Humarin Paraphraser](https://huggingface.co/humarin/chatgpt_paraphraser_on_T5_base)
 * [BERTScore](https://github.com/Tiiiger/bert_score)
 * [Rouge](https://pypi.org/project/rouge/)
+* [SpaCy](https://spacy.io/)
 
 
 
