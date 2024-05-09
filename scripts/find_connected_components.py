@@ -1,35 +1,23 @@
 import networkx as nx
 
-def connected_components(graph_list):
+def find_components(graph_list):
     """
-    Encuentra los componentes conectados en cada grafo.
+    Find the connected components in each graph.
 
     Parameters:
-    graph_list (list of networkx.Graph): Lista de grafos.
+    graph_list (list of networkx.Graph): List of graphs.
 
     Returns:
-    tuple: Una tupla que contiene una lista de componentes conectados para cada grafo
-           y la suma total de la cantidad de componentes conectados en todos los grafos.
+    tuple: A tuple containing a list of connected components for each graph
+           and the total sum of the number of connected components in all graphs.
     """
     
-    print("\nFinding connected components...\n")
+    cc_list = []
 
-    cc_list = []  # Lista para almacenar los componentes conectados de cada grafo
-
-    for i, graph in enumerate(graph_list):
-        cc = []  # Lista para almacenar los componentes conectados del grafo actual
-        
-        # Obtenemos componentes conectados
+    for graph in graph_list:
         cc = list(nx.connected_components(graph))
+        cc_list.append(cc)
 
-        cc_list.append(cc)  # Añadir los componentes conectados a la lista
+    total_sum = sum(len(cc) for cc in cc_list)
 
-    # Calcular la suma total de la cantidad de componentes conectados en todos los grafos
-    suma_total = sum(len(cc) for cc in cc_list)
-
-    #print(f"Suma total de la cantidad de componentes conectados en cada grafo: {suma_total}")
-
-    return cc_list, suma_total
-
-
-
+    return cc_list, total_sum
